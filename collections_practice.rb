@@ -47,6 +47,9 @@ end
 
 def sum_array(array_of_numbers)
   array_of_numbers.inject{ |sum, number| sum += number }
+  
+  # Short
+  # array_of_numbers.inject(:+)
 end
 
 def add_s(words)

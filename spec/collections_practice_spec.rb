@@ -32,8 +32,8 @@ describe 'collections practice' do
 
   # Bonus
   describe '#swap_elements_from_to' do
-    it 'swaps the element from its original index to the destination index' do
-      expect(swap_elements_from_to(["blake", "ashley", "scott"], 2, 0)).to eq(["scott", "blake", "ashley"])
+    it 'swaps the element with the given index with the element at the destination index' do
+      expect(swap_elements_from_to(["blake", "ashley", "scott"], 2, 0)).to eq(["scott", "ashley", "blake"])
     end
   end
 

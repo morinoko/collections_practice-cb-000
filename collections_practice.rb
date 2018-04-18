@@ -30,11 +30,11 @@ def reverse_array(array)
 end
 
 def kesha_maker(array_of_strings)
-  array_of_strings.collect do |string|
-    string_to_array = string.split(//)
-    string_to_array[2] = "$"
-    string_to_array.join
-  end
+  # array_of_strings.collect do |string|
+  #   string_to_array = string.split(//)
+  #   string_to_array[2] = "$"
+  #   string_to_array.join
+  # end
 end
 
 def find_a(array_of_strings)

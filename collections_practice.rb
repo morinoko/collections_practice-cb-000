@@ -15,6 +15,8 @@ def swap_elements(array)
   # and delete the extra element now at the fourth position (index 3)
   array.insert(1, array[2]).delete_at(3)
   array
+  ## Other method:
+  ## array[1], array[2] = array[2], array[1]
 end
 
 def swap_elements_from_to(array, index, destination_index)

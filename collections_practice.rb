@@ -19,13 +19,6 @@ def swap_elements(array)
   ## array[1], array[2] = array[2], array[1]
 end
 
-def swap_elements_from_to(array, original_index, destination_index)
-  elem_to_move = array[original_index]
-  elem_being_swapped = array[destination_index]
-  array[destination_index] = elem_to_move
-  array[original_index] = elem_being_swapped
-end
-
 def reverse_array(array)
   array.reverse
 end

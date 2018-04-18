@@ -20,9 +20,7 @@ def swap_elements(array)
 end
 
 def swap_elements_from_to(array, index, destination_index)
-  element_to_move = array[index]
-  array.delete_at(index) # delete the element at its former position
-  array.insert(destination_index, element_to_move) # reinsert it at the destination index
+  array[index], array[destination_index] = array[destination_index], array[index]
 end
 
 def reverse_array(array)

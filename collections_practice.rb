@@ -35,6 +35,7 @@ def kesha_maker(array_of_strings)
   #   string_to_array[2] = "$"
   #   string_to_array.join
   # end
+  array_of_strings.each{ |string| string[2] = "$" }
 end
 
 def find_a(array_of_strings)

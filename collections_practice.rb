@@ -30,11 +30,14 @@ def reverse_array(array)
 end
 
 def kesha_maker(array_of_strings)
+  # Long method:
   # array_of_strings.collect do |string|
   #   string_to_array = string.split(//)
   #   string_to_array[2] = "$"
   #   string_to_array.join
   # end
+  
+  # Short method:
   array_of_strings.each{ |string| string[2] = "$" }
 end
 
@@ -43,7 +46,7 @@ def find_a(array_of_strings)
 end
 
 def sum_array(array_of_numbers)
-  array_of_numbers.inject{ |sum, number| sum += number}
+  array_of_numbers.inject{ |sum, number| sum += number }
 end
 
 def add_s(words)

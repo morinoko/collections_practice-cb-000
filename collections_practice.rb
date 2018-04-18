@@ -15,12 +15,8 @@ def swap_elements(array)
   # and delete the extra element now at the fourth position (index 3)
   array.insert(1, array[2]).delete_at(3)
   array
-end
-
-def swap_elements_from_to(array, index, destination_index)
-  element_to_move = array[index]
-  array.delete_at(index) # delete the element at its former position
-  array.insert(destination_index, element_to_move) # reinsert it at the destination index
+  ## Other method:
+  ## array[1], array[2] = array[2], array[1]
 end
 
 def reverse_array(array)
@@ -28,11 +24,15 @@ def reverse_array(array)
 end
 
 def kesha_maker(array_of_strings)
-  array_of_strings.collect do |string|
-    string_to_array = string.split(//)
-    string_to_array[2] = "$"
-    string_to_array.join
-  end
+  # Long method:
+  # array_of_strings.collect do |string|
+  #   string_to_array = string.split(//)
+  #   string_to_array[2] = "$"
+  #   string_to_array.join
+  # end
+  
+  # Short method:
+  array_of_strings.each{ |string| string[2] = "$" }
 end
 
 def find_a(array_of_strings)
@@ -40,7 +40,10 @@ def find_a(array_of_strings)
 end
 
 def sum_array(array_of_numbers)
-  array_of_numbers.inject{ |sum, number| sum += number}
+  array_of_numbers.inject{ |sum, number| sum += number }
+  
+  # Short
+  # array_of_numbers.inject(:+)
 end
 
 def add_s(words)
